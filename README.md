@@ -8,17 +8,6 @@ You can check that via:
 
 ## Compiling and running tests
 
-```
-# this will produce a wasm build in ./target/wasm32-unknown-unknown/release/YOUR_NAME_HERE.wasm
-cargo wasm
-
-# this runs unit tests with helpful backtraces
-RUST_BACKTRACE=1 cargo unit-test
-
-# auto-generate json schema
-cargo schema
-```
-
 ### Understanding the tests
 
 The main code is in `src/contract.rs` and the unit tests there run in pure rust, which makes them very quick to execute and give nice output on failures, especially if you do `RUST_BACKTRACE=1 cargo unit-test`.
