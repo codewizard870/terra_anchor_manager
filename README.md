@@ -6,17 +6,7 @@ And you need to have the `wasm32-unknown-unknown` target installed as well.
 
 You can check that via:
 
-```
-rustc --version
-cargo --version
-rustup target list --installed
-# if wasm32 is not listed above, run this
-rustup target add wasm32-unknown-unknown
-```
-
 ## Compiling and running tests
-
-Now that you created your custom contract, make sure you can compile and run it before making any changes. Go into the repository and do:
 
 ```
 # this will produce a wasm build in ./target/wasm32-unknown-unknown/release/YOUR_NAME_HERE.wasm
